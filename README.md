@@ -32,16 +32,15 @@ Para minha métrica, levo em conta o tamanho em kilobytes do armazenamento utili
 
 ## Métrica de segurança
 A métrica de segurança leva em conta todos os conceitos antes apresentados e, segue as seguintes regras matemáticas:
-$$ S(n, m, k, H) = 1 - \left(\frac{0.25 \cdot T(n) + 0.15 \cdot L(m) + 0.2 \cdot C(k) + 0.4 \cdot H}{4} \right) $$
-$$ T(n) = n^2$$
-$$ L(m) = m^4$$
-$$ C(k) = k^8$$
-$$
-H = \left\{\begin{array}{lr}
-        1, & \text{caso a conexão não seja segura}\\
-        0, & \text{caso a conexão seja segura}\\
-        \end{array}\right\}
-$$
+
+$$S(n, m, k, H) = 1 - \left(\frac{0.25 \cdot T(n) + 0.15 \cdot L(m) + 0.2 \cdot C(k) + 0.4 \cdot H}{4} \right)$$
+
+$$T(n) = n^2$$
+
+$$L(m) = m^4$$
+
+$$C(k) = k^8$$
+
 Sendo $S$ o score de segurança da página, $T$ o score parcial sobre as requisições a terceiros, $L$ o score parcial sobre o tamanho calculado do local storage, $C$ o score parcial calculado sobre os cookies injetados na página e $H$ a presença de uma conexão SSL segura.
 O comportamento da função de score final se comporta da seguinte maneira. Lembre-se que para visualizarmos a função de maneira consistente precisaríamos plota-la em um gráfico com 5 dimensões. O gráfico abaixo somente representa o comportamento do polinômio semelhante a ela.
 
