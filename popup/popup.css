@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #2e3440;
+}
+
+.divMainPopup {
+    display: flex;
+    flex-direction: column;
+    background: #2e3440;
+}
+
+.divFactorSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2e3440;
+}
+
+.divScoreSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e3440;
+}
+
+.pText {
+    margin: 0.25rem 1rem 0.25rem 1rem;
+    color: #eceff4;
+}
+
+.gHidden {
+    display: none !important;
+}
+
+.imgLoading {
+    width: 2rem;
+    height: 2rem;
+}
+
